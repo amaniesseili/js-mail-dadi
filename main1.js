@@ -1,17 +1,31 @@
+const userEmailElement = document.querySelector("[name='email']")
+
+document.getElementById("InputEmail").innerHTML = `${userEmailElement}`;
+
 //  variabile mailing list
-const mailingList = ["amaniesseili@hotmail.com","ama-esseili@gmail.com","hassanleila@hotmail.com","nayaleila2022@gmail.com"];
+const mailingList = ["boolean0@gmail.com","boolean1@gmail.com","boolean2@gmail.com"];
+
+const btnSubmit = document.querySelector(".btn-submit");
 
 // variabile di default =false
 let emailFound = false
 
-// cercare dentro l'array mailinglist
-for (let i=0; i < mailingList.length; i++){
+
+
+btnSubmit.addEventListener ("click", function() {
+
+    for (let i=0; i < mailingList.length; i++){
     
-    const userEmail = mailingList[i]
-    
-    if ( userEmail === mailingList){
-        console.log( "sei già registrato e puoi effettuare l'accesso");
-        emailFound = true
+        const userEmailElement = mailingList[i]
+        
+        if ( userEmailElement === mailingList){
+            document.getElementById("registraion-mess").innerHTML = ( "sei già registrato e puoi effettuare l'accesso");
+            emailFound = true
+        }else if ( userEmailElement !== mailingList)
+        document.getElementById("registraion-mess").innerHTML = ( "Ci dispiace, ma l'accesso è limitato agli utenti registrati.");
+
+
     }
 
-}
+})
+
