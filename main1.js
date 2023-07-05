@@ -21,7 +21,7 @@ btnSubmit.addEventListener ("click", function() {
         if ( userEmailElement === mailingList){
             document.getElementById("registraion-mess").innerHTML = ( "sei già registrato e puoi effettuare l'accesso");
             emailFound = true
-        }else if ( userEmailElement !== mailingList)
+        }else if ( userEmailElement !== mailingList[i] && emailFound === false)
         document.getElementById("registraion-mess").innerHTML = ( "Ci dispiace, ma l'accesso è limitato agli utenti registrati.");
 
 
