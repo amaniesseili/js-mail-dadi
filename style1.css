@@ -1,15 +1,48 @@
 header{
     height: 80px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .container{
     height: calc(100vh - 160px);
-    border: 2px solid red;
+    /* background-color: blue; */
+   
 }
-
+body{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 footer{
     height: 80px;
-    border: 2px solid black;
+    background-color:#58D85F;
 
 }
+
+h4{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.col-4{
+    
+    border-radius: 20px;
+    margin-top: 7rem;
+}
+
+.col-6{
+   
+    border-radius: 20px;
+    margin-top: 7rem;
+    
+}
+
+h4{
+    margin-top: 10rem;
+}
+
+.ama-img{
+    margin-left: 50px;
+}
+

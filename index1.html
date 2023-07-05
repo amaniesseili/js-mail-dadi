@@ -10,33 +10,97 @@
 </head>
 <body>
     <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="#"> <img class="ama-img" src="img/logo.svg" alt=""></a>
+
+        </nav>
 
     </header>
     <main>
-        <div class="container">
-            <div class="row d-flex justify-content-center mt-5">
-                <div class="col-5">
+        <div class="container ">
+           
+            <div class="row d-flex ">
+                <div class="col-3">
+                    <h4>Log In</h4>
+                    <p>Inserici l'indirizzi e-mail per proccedere con l'accesso al sistema.</p>
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="InputEmail" name="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="InputEmail" name="email" placeholder="Inserici l'indirizzo mail " aria-describedby="emailHelp">
 
                             <div id="registraion-mess" class="form-text"> </div>
-                            
+
                         </div>
-                        <button type="button" class="btn btn-submit btn-primary">Submit</button>
+                        
+                        
+                        
                     </form>
+                    <div class="d-flex flex-column mt-4 ">
+                        <button type="button" class="btn btn-submit btn-warning style mb-3">Submit</button>
+                    </div>
                 </div>
+
+                <div class="col-1">
+
+                </div>
+
+                <div class="col-5">
+                    <div class="giocco-dadi">
+                        <h4>Giocco dei Dadi </h4>
+
+                        <table class="table bg-transparent">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Giocatore</th>
+                                    <th scope="col">Computer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">voto</th>
+                                    <td id="user-rand-num">0</td>
+                                    <td id="com-rand-num">0</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+                        <div class="d-flex justify-content-center flex-column text-center">
+                            <p id="final.mess"></p>
+                            <button type="button" class="btn btn-start btn-warning style px-5 mt-5 mb-3 "> Start</button>
+                        </div>
+
+                        <div class="col-3">
+
+                        </div>
+                        
+
+
+
+                    </div>
+                </div>
+                
             </div>
         </div>
-      
+
 
     </main>
     <footer>
+        <div class=" ms-5 px-5 py-4">
+            <p>Sogna in grande, naviga nel nostro mondo e lascia che il tuo viaggio inizi qui. </p>
+            
+        </div>
+        
+        
+            
+        
 
     </footer>
 
-    
+
 
     <script src="main1.js"></script>
 </body>
